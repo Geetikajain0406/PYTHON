@@ -1,0 +1,17 @@
+choice = input("enter your choice")
+num1 = int(input("enter num1 "))
+num2 = int(input("enter num2 "))
+if choice == 'a':
+    value = num1+num2
+elif choice == 'd':
+    value = num2-num1
+elif choice == 'm':
+    value = num1* num2
+elif choice == 'd':
+    value = num2/num1
+elif choice == 'p':
+    value = num2 % num1
+else:
+    print("enter a valid one lawde")
+    
+print(f"the value is: {value} ")
