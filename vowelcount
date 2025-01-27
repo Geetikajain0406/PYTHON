@@ -1,0 +1,8 @@
+str= "hello"
+count =0;
+for char in str:
+ if char in 'aeiou':
+   str =str.lower()
+   count +=1
+ 
+print("the count is:",count)
