@@ -1,0 +1,26 @@
+# Initialize an empty list to store the results
+individuals = []
+
+# Loop to input the names and step counts of 10 individuals
+for i in range(10):
+    print(f"Enter details for individual {i + 1}:")
+    name = input("Name: ")
+    steps = int(input("Daily Step Count: "))
+    
+    # Determine activity level based on step count
+    if steps >= 10000:
+        activity_level = "Highly Active"
+    elif 7000 <= steps <= 9999:
+        activity_level = "Moderately Active"
+    elif 4000 <= steps <= 6999:
+        activity_level = "Lightly Active"
+    else:
+        activity_level = "Sedentary"
+    
+    # Store the result in the list
+    individuals.append((name, steps, activity_level))
+
+# Print the results
+print("\nActivity Levels of Individuals:")
+for name, steps, activity_level in individuals:
+    print(f"Name: {name}, Steps: {steps}, Activity Level: {activity_level}")
