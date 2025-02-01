@@ -1,0 +1,9 @@
+dividend=int(input("enter dividend"))
+diviser=int(input("enter diviser"))
+if dividend <0:
+    print("cant do this lawde kahi or ja")
+else:
+ remainder = dividend/diviser
+ quoteint = dividend % diviser
+
+print("the remainder and quoteint is",remainder,quoteint)
