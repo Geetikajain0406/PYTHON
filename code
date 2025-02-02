@@ -1,0 +1,9 @@
+side1 =  int(input("enter the side"))
+side2 =int(input("enter the side"))
+side3 = int(input("enter the side"))
+if side1==side2==side3:
+    print("equilateral")
+elif side1!=side2!=side3 & side3!=side1:
+    print("scalen")
+else:
+    print("isoceles")
