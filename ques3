@@ -1,0 +1,18 @@
+pin = int(input("enter your pin"))
+def is_palindrome(pin):
+  return str(pin)== str(pin)[::-1]
+def sum( pin):
+  th =pin//1000
+  hun=(pin//100)%10
+  ten=(pin//10)%10
+  one=pin % 10
+  sum = th+hun+ten+one
+  return sum
+if is_palindrome(pin):
+    print("welcome")
+elif pin%7==0:
+    print("try gain later")
+elif sum(pin) % 2 ==0:
+    print("allmost there")
+else:
+    print("access denied")
