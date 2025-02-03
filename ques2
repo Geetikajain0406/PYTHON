@@ -1,0 +1,18 @@
+pur = int(input("enter your purchase amount"))
+mem = input("enter yes or no")
+if mem == 'yes':
+    if pur>5000:
+       print("discount 20%")
+    elif pur >3000:
+        print("discount 5%")
+    else:
+        print("no discount")
+elif mem =='no':
+    if pur >5000:
+          print("discount 10%")
+    elif pur >3000:
+        print("discount 5%")
+    else:
+     print("no discount")
+else:
+ print("invalid")
