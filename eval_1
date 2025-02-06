@@ -1,0 +1,15 @@
+apple=int(input("Enter quantity of Apples (in kg)"))
+banana=int(input("Enter quantity of Bananas (in dozen"))
+milk=int(input("Enter quantity of Milk (in liters):"))
+total_bill=0
+discount=0
+apple_cost = (apple*50)
+banana_cost = banana*30
+milk_cost = milk*25
+total_bill = (apple_cost+banana_cost+milk_cost)
+print(total_bill)
+if total_bill>500:
+    discount=(total_bill*0.10)
+
+    total_bill1=total_bill-discount
+    print("Final Amount to be Paid:",total_bill1)
