@@ -1,0 +1,8 @@
+age = int(input("Enter your age: "))
+
+if age >= 18:
+    print("Eligible for Driving License")
+elif age in [16, 17]:
+    print("Learner's Permit")
+else:
+    print("Not Eligible")
