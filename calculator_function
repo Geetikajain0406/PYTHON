@@ -1,0 +1,37 @@
+def add(a,b):
+   
+    
+    return a+b
+    
+def sub(a,b):
+    
+  
+    return a-b
+
+def mul(a,b):
+    
+
+    return a*b
+
+def div(a,b):
+    if b == 0:
+        return "Error: Division by zero is not allowed"
+    else :
+        
+         return a/b
+    
+     
+a = float(input("Enter value of a: "))  
+b = float(input("Enter value of b: "))
+operation=input("enter operation 1 for add , 2 for sub, 3 for mul ,4 for div")
+if operation=='1':
+    print(f"the result is{add(a,b)}")
+elif operation=='2':
+    print(f"the result is{sub(a,b)}")
+elif operation=='3':
+    print(f"the result is {mul(a,b)}")
+elif operation=='4':
+    print(f"the result is {div(a,b)}")
+else:
+    print("sorry invalid operator")
+    
