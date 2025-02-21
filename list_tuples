@@ -1,0 +1,15 @@
+def highest_list(list1):
+ rating=0
+ highest_name=[]
+ for name,score in list1:
+     if score>rating:
+        rating=score
+        highest_name=[name]
+     elif rating ==score:
+        highest_name.append(name)
+        return highest_name
+         
+            
+            
+list1=[("geet",3),("geetika",4),("gargi",5),("aashu",5)]
+print(highest_list(list1))
