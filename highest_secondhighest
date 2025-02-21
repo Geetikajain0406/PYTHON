@@ -1,0 +1,13 @@
+list1=[1,2,3,4,5]
+highest=0
+second=0
+for num in list1:
+    if num>highest:
+        second=highest
+        highest=num
+        if num>second and num != highest:
+            second= num
+        
+    
+print(highest)  
+print(second)
