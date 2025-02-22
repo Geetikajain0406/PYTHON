@@ -1,0 +1,4 @@
+words = ["apple", "banana", "orange", "umbrella", "grape", "egg"]
+vowels = ('a', 'e', 'i', 'o', 'u')
+count = sum(1 for word in words if word.lower().startswith(vowels))
+print("Number of words starting with a vowel:", count)
