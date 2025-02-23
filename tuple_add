@@ -1,0 +1,8 @@
+tuple1=[(1, 2), (2, 3), (3, 4)]
+total=[]
+for tup in tuple1:
+    total.append(sum(tup))
+    
+    
+print(total)
+    
