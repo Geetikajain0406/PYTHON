@@ -1,0 +1,18 @@
+str1="hello here geet"
+str2=str1.lower()
+vowels='aeiouAEIOU'
+count_v=0
+count_s=0
+count_c=0
+for char in str2:
+ if char in vowels:
+     count_v +=1
+ elif char.isspace():
+     count_s += 1
+ else:
+     count_c +=1
+     
+     
+print(count_v)
+print(count_s)
+print(count_c)
