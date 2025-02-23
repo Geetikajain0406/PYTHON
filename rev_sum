@@ -1,0 +1,9 @@
+num=int(input("enter a num"))
+num1=str(num)[::-1]
+print(num1)
+sum1=0
+for num in num1:
+    sum1+= int(num)
+    
+print(sum1)
+    
