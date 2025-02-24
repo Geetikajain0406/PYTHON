@@ -1,0 +1,32 @@
+stud={
+    "stud1":{
+        "name":"geet",
+        "rollno":13,
+        "marks":{
+            "sci":78,"english":95,"eng":34
+        }
+    },
+     "stud2":{
+        "name":"geeta",
+        "rollno":12,
+        "marks":{
+            "sci":73,"english":43,"eng":44
+        }
+    },
+     "stud3":{
+        "name":"geetika",
+        "rollno":11,
+        "marks":{
+            "sci":78,"english":90,"eng":89
+        }
+    }
+}
+lowest=300
+lower_name=""
+for stud in stud.values():
+    total_marks=sum(stud["marks"].values())
+    if total_marks<lowest:
+        lowest=total_marks
+        lower_name=stud["name"]
+        
+print(lower_name)
