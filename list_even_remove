@@ -1,0 +1,14 @@
+# Ask for input
+numbers = input("Enter numbers separated by spaces: ")
+
+# Convert input to a list of integers
+num_list = list(map(int, numbers.split()))
+
+# Remove even numbers using a loop
+filtered_list = []
+for num in num_list:
+    if num % 2 != 0:  # Check if the number is odd
+        filtered_list.append(num)
+
+# Print the final list
+print(filtered_list)
