@@ -1,0 +1,10 @@
+name=input("enter name")
+age=input("enter age")
+with open("userinfo.txt","w") as file:
+    file.write(f"name:{name}\n")
+    file.write(f"age:{age}\n")
+
+file=open("userinfo.txt","r")
+print("output")
+print(file.read())
+print()
