@@ -1,0 +1,43 @@
+def gcd():
+    import math
+    a=int(input("enter a "))
+    b=int(input("enter b "))
+    print("the gcd is",math.gcd(a,b))
+
+def count():
+    a=input("enter a ")
+    a=a.lower()
+    c=0
+    d=0
+    for st in a:
+        if st in 'aeiou':
+            c+=1
+        else:
+            d+=1
+    print(f"{c},{d}")
+
+    
+def fac():
+    a=int(input("enter a "))
+    b=[]
+    i=1
+    while(i<=a):
+        if a % i==0:
+            b.append(i)
+        i+=1
+    print(b)
+
+choice={
+    1: gcd,
+    2: count,
+    3: fac
+}
+
+a = int(input("enter a "))
+
+if a in choice:
+    choice[a]()
+else:
+    print("invalid")
+
+    
