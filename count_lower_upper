@@ -1,0 +1,14 @@
+st="hello PYTHON meee"
+up=0
+lo=0
+sp=0
+for char in st:
+    if char.islower():
+        lo+=1
+    elif char.isspace():
+        sp+=1
+    elif char.isupper():
+        up+=1
+        
+
+print(f"the string have lower words are{lo},and upper are{up}")
