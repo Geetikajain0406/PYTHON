@@ -1,0 +1,8 @@
+d1 = {"Gfg": 20, "is": 36, "best": 100}
+dt = {"Gfg2": 26, "is2": 20, "best2": 70}
+d3 = {}
+
+for k, n in zip(d1, dt.values()):  # Fixed: dt.values -> dt.values()
+    d3[k] = n
+
+print(d3)
