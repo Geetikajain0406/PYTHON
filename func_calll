@@ -1,0 +1,35 @@
+contact ={}
+def add_name(name,number):
+    if name in contact:
+        print("allready there")
+    else:
+        contact[name]=number
+        print(f"number added in {name}")
+
+def update_contact(name,number):
+    if name not in contact:
+        print("name not in contact")
+    else:
+        contact[name] = number
+        print("Contact updated.")
+        
+def delete_contact(name):
+    if name not in contact:
+        print("name not in contact")
+    else:
+        del contact[name]
+        print("contact deleted")
+        
+def display_contact():
+    if not contact:
+         print("no info")
+        
+    else:
+        for name,number in contact.items():
+            print(f"{name},{number}")
+
+add_name("alice",2345678)  
+add_name("kat",234)
+display_contact()
+        
+        
