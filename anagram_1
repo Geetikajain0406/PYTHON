@@ -1,0 +1,9 @@
+s1 = "listen"
+s2 = "silent"
+c = len(s1)
+mid = c // 2  # Integer division
+
+if s1[:mid] == s2[-mid:]:  
+    print("It is an anagram")  
+else:  
+    print("Not an anagram")
