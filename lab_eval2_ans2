@@ -1,0 +1,15 @@
+def remove_special_char(s):
+    s1=[]
+    s3=[]
+    for char in s:
+        if char.isalpha():
+            s3.append(char)
+           
+        elif char.isalnum():
+            s1.append(char)
+
+    s2="".join(s3)
+    print(s2)
+
+s=input("enter string")
+remove_special_char(s)
