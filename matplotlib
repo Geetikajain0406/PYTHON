@@ -1,0 +1,7 @@
+from matplotlib import pyplot as plt
+x=["python","c","c++","ruby"]
+y=[80,70,60,50]
+plt.bar(x,y,label="bar")
+plt.legend()
+plt.title("bar")
+plt.show()
