@@ -1,0 +1,74 @@
+from matplotlib import pyplot as plt
+x=[1, 2, 3, 4, 5]
+y=[45, 50, 55, 60, 70]
+plt.plot(x,y)
+plt.title("scores")
+plt.xlabel("study hours")
+plt.ylabel("test scores ")
+plt.show()
+
+from matplotlib import pyplot as plt
+x=['Python', 'C++', 'Java', 'Web Dev']
+y=[50, 40, 35, 60]
+z = [0, 1, 2, 3]
+plt.bar(z,y)
+plt.xticks(z,x)
+plt.xlabel("courses")
+plt.ylabel("students")
+plt.title("enrollment")
+plt.show()
+
+from matplotlib import pyplot as plt
+category=['Rent', 'Groceries', 'Transport', 'Entertainment', 'Savings']
+expenses=[12000, 6000, 2000, 1500, 2500]
+plt.figure(figsize=(6,6))
+plt.pie(expenses,labels=category, autopct='%1.1f%%',startangle=90)
+plt.title("expenses distributed in category")
+plt.tight_layout()
+plt.show()
+
+from matplotlib import pyplot as plt
+days=['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+temp=[30, 32,34, 33, 31, 29, 28]
+plt.plot(days,temp)
+plt.title("Weekly Temperature Report")
+plt.show()
+
+from matplotlib import pyplot as plt
+days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+temp= [30, 32,34, 33, 31, 29, 28]
+plt.plot(days,temp,marker='o',label="temp")
+max_temp=max(temp)
+max_idx=temp.index(max_temp)
+plt.plot(days[max_idx],max_temp,marker='o',color='red',markersize=10,label="hottest day")
+plt.xlabel("days")
+plt.ylabel("temp")
+plt.title("weekly report")
+plt.legend()
+plt.show()
+
+from matplotlib import pyplot as plt
+plt.figure()
+r=['R1', 'R2', 'R3', 'R4', 'R5']
+class_a=[85, 78, 90, 88, 92]
+class_b=[80, 82, 84, 85, 89]
+class_c=[70, 75, 73, 76, 80]
+plt.plot(r,class_a,label="class_a",color="blue",linestyle='-',marker='o')
+plt.plot(r,class_b,label="class_b",color="red",linestyle='--',marker='s')
+plt.plot(r,class_c,label="class_c",color="green",linestyle='-.',marker='^')
+plt.ylabel("score")
+plt.xlabel("rounds")
+plt.title("clases basis on rounds")
+plt.legend()
+plt.show()
+
+
+import matplotlib.pyplot as plt
+plt.figure()
+total_bill = [16.99, 10.34, 21.01, 23.68, 24.59, 25.29, 8.77, 26.88, 15.04, 14.78]
+tip = [1.01, 1.66, 3.50, 3.31, 3.61, 4.71, 2.00, 3.12, 1.96, 3.23]
+plt.scatter(total_bill, tip, color='blue', marker='o')
+plt.xlabel("Total Bill ($)")
+plt.ylabel("Tip ($)")
+plt.title("Relationship between Total Bill and Tip")
+plt.show()
