@@ -1,0 +1,11 @@
+def remove_specific(list1,sp):
+    result=[]
+    for i in list1:
+        if i!=sp:
+            result.append(i)
+    return result
+    
+list1=[1,2,3,4,5]
+sp=4
+result=remove_specific(list1,sp)
+print(result)
