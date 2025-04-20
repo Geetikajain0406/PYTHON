@@ -1,0 +1,11 @@
+def second_largest(arr):
+   row,cols=arr.shape
+   return row==cols
+            
+            
+import numpy as np
+arr=np.array([[1,2,3]
+             ,[4,5,6],
+             [7,8,9]])
+print(second_largest(arr))
+            
