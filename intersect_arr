@@ -1,0 +1,14 @@
+def intersection(arr,arr1):
+   list1=[]
+   for i in arr:
+       for j in arr1:
+           if i==j:
+               list1.append(int(i))
+   return list1
+            
+import numpy as np
+arr=np.array([1,2,3,4,5])
+arr1=np.array([1,4,5,6,7])
+list1=intersection(arr,arr1)
+print(list1)
+           
