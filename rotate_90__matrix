@@ -1,0 +1,11 @@
+def rotate(arr):
+    transpose=list(zip(*arr))
+    rotate=[list(row)[::-1]for row in transpose]
+    return rotate
+    
+arr=[[1,2,3],
+     [4,5,6],
+     [7,8,9]]
+rotate=rotate(arr)
+for row in rotate:
+    print(row)
