@@ -1,0 +1,13 @@
+Days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+C = [50, 60, 55, 65, 70, 90, 95]
+R = [3000, 3600, 3300, 3900, 4200, 6000, 6200]
+plt.figure()
+fig, ax1=plt.subplots()
+ax2=ax1.twinx()
+ax1.plot(days,C,'r-o',label='customer')
+ax2.plot(days,R,'b-o',label='revenue')
+ax1.set_xlabel("days")
+ax1.set_ylabel("customer")
+ax2.set_ylabel("revenue")
+plt.title("tit")
+plt.show
