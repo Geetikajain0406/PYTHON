@@ -1,0 +1,13 @@
+from matplotlib import pyplot as plt
+days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+temperature = [22, 24, 19, 23, 25, 21]
+humidity = [60, 55, 70, 65, 50, 75]
+fig, ax1 = plt.subplots()
+ax2 = ax1.twinx()
+ax1.plot(days, temperature,  label='Temperature (°C)')
+ax2.plot(days, humidity, label='Humidity (%)')
+ax1.set_xlabel('Day')
+ax1.set_ylabel('Temperature (°C)', color='green')
+ax2.set_ylabel('Humidity (%)', color='blue')
+plt.title('Weather Data Over 6 Days')
+plt.show()
