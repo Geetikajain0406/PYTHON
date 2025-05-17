@@ -1,0 +1,18 @@
+import csv
+
+filename = "employees.csv"
+
+try:
+    with open(filename, "r") as file:
+        reader = csv.reader(file)
+        for row in reader:
+            print(row)
+
+except FileNotFoundError:
+    print("Error: File not found.")
+except PermissionError:
+    print("Error: Permission denied.")
+except csv.Error:
+    print("Error: CSV format issue.")
+except Exception as e:
+    print("An unexpected error occurred:", e)
