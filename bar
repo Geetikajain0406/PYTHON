@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+
+matches = [1, 2, 3, 4, 5]
+goals = [2, 1, 3, 0, 4]
+
+plt.bar(matches, goals)
+plt.xlabel("Match")
+plt.ylabel("Goals Scored")
+plt.title("Goals Scored By The Team In Each Match")
+plt.show()
