@@ -1,0 +1,15 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    list1=list(arr)
+    high = sec = float('-inf')
+    
+    for i in list1:
+        if high<i:
+            sec=high
+            high=i
+        elif sec<i and i != high:
+            sec=i
+            
+            
+    print(sec)
