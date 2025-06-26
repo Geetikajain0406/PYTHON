@@ -1,0 +1,8 @@
+def average(array):
+    distinct_h=set(array)
+    sum1=sum(distinct_h)
+    l=len(distinct_h)
+    avg=sum1/l
+    return avg
+
+if __name__ == '__main__':
