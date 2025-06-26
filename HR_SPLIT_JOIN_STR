@@ -1,0 +1,13 @@
+def split_and_join(line):
+    splits=line.split(' ')
+    l=[]
+    for s in splits:
+        l.append(s)
+    return '-'.join(l)
+    
+    # write your code here
+
+if __name__ == '__main__':
+    line = input()
+    result = split_and_join(line)
+    print(result)
