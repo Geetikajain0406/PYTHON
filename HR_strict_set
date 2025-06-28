@@ -1,0 +1,11 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+set1=set(map(int, input().split()))
+n = int(input())
+is_strict=True
+for _ in range(n):
+    set2=set(map(int, input().split()))
+    if not(set1>set2):
+        is_strict=False
+        break
+        
+print( is_strict)
