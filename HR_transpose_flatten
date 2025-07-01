@@ -1,0 +1,15 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import numpy as np
+n, m = map(int, input().split())
+data=[]
+for _ in range(n):
+    row = list(map(int, input().split()))
+    data.append(row)
+
+    
+
+arr=np.array(data)
+t_arr=np.transpose(arr)
+print(t_arr)
+print(arr.flatten())
+
