@@ -1,0 +1,10 @@
+STDOUT
+import numpy
+def func(arr):
+    arr1=numpy.array(arr,int)
+    arr2=numpy.reshape(arr1,(3,3))
+    return arr2
+    
+arr=input().split()
+result=func(arr)
+print(result)
