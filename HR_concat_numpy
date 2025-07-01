@@ -1,0 +1,8 @@
+import numpy 
+n,m,p=map(int,input().split())
+array1=[list(map(int, input().split())) for _ in range(n)]
+array2 = [list(map(int, input().split())) for _ in range(m)]
+arr1=numpy.array(array1)
+arr2=numpy.array(array2)
+result=numpy.concatenate((arr1,arr2),axis=0)
+print(result)
