@@ -1,0 +1,11 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import numpy as np 
+n,m=map(int,input().split())
+A = np.array([list(map(int, input().split())) for _ in range(n)])
+B = np.array([list(map(int, input().split())) for _ in range(n)])
+print(np.add(A, B))             # Addition
+print(np.subtract(A, B))        # Subtraction
+print(np.multiply(A, B))        # Multiplication
+print(np.floor_divide(A, B))    # Integer (floor) Division
+print(np.mod(A, B))             # Modulus
+print(np.power(A, B))           # Power
