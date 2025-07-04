@@ -1,0 +1,14 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import numpy as np
+
+# Read coefficients of the polynomial (highest degree to constant)
+coefficients = list(map(float, input().split()))
+
+# Read the value at which to evaluate the polynomial
+x = float(input())
+
+# Use polyval to evaluate the polynomial
+result = np.polyval(coefficients, x)
+
+# Print result
+print(result)
