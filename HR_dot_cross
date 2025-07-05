@@ -1,0 +1,13 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import numpy as np
+n=int(input())
+A = np.array([list(map(int, input().split())) for _ in range(n)])
+
+# Read matrix B
+B = np.array([list(map(int, input().split())) for _ in range(n)])
+
+# Compute matrix multiplication
+result = np.dot(A, B)
+
+# Print the result
+print(result)    
