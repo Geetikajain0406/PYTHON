@@ -1,0 +1,8 @@
+ Enter your code here. Read input from STDIN. Print output to STDOUT
+import numpy as np
+a=tuple(map(int,input().split()))
+b=tuple(map(int,input().split()))
+A=np.array(a)
+B=np.array(b)
+print(np.inner(A,B))
+print(np.outer(A,B))
