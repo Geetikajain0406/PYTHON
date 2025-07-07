@@ -1,0 +1,12 @@
+import numpy
+numpy.set_printoptions(sign=' ')  # to match the output format exactly
+
+# input le lo
+A = numpy.array(list(map(float, input().split())))
+
+# floor
+print(numpy.floor(A))
+# ceil
+print(numpy.ceil(A))
+# rint (round)
+print(numpy.rint(A))
