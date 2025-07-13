@@ -1,0 +1,27 @@
+class Solution:
+    # Function to sort an array of 0s, 1s, and 2s
+    def sort012(self, arr):
+        c1=0
+        c0=0
+        c2=0
+        n=len(arr)
+        for i in range(len(arr)):
+            if arr[i]==0:
+                c0+=1
+            elif arr[i]==1:
+                c1+=1
+            else:
+                c2+=1
+        i=0
+        for _ in range(c0):
+            arr[i] = 0
+            i += 1
+        for _ in range(c1):
+            arr[i] = 1
+            i += 1
+        for _ in range(c2):
+            arr[i] = 2
+            i += 1
+        return arr
+            
+        
