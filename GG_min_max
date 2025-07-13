@@ -1,0 +1,13 @@
+class Solution:
+    def get_min_max(self, arr):
+        high=arr[0]
+        m=arr[0]
+        if len(arr)==1:
+            high=m
+        for i in range(len(arr)):
+            if high<arr[i]:
+                high=arr[i]
+            elif m>arr[i]:
+                m=arr[i]
+        return [m,high]
+    
