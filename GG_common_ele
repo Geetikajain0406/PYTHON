@@ -1,0 +1,8 @@
+
+class Solution:
+    def commonElements(self, arr1, arr2, arr3):
+        s1=set(arr1)
+        s2=set(arr3)
+        s3=set(arr2)
+        common=s1 & s2 & s3
+        return sorted(list(common))
