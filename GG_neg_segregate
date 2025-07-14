@@ -1,0 +1,12 @@
+class Solution:
+    def segregateElements(self, arr):
+        p=[]
+        for i in range(len(arr)):
+            if arr[i]>=0:
+                p.append(arr[i])
+        for i in range(len(arr)):
+            if arr[i]<0:
+                p.append(arr[i])
+        for i in range(len(arr)):
+            arr[i]=p[i]
+                
