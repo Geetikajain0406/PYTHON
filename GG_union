@@ -1,0 +1,8 @@
+class Solution:    
+    def findUnion(self, a, b):
+        s=set()
+        for i in range(0,len(a)):
+            s.add(a[i])
+        for j in range(0,len(b)):
+            s.add(b[j])
+        return sorted(list(s))
