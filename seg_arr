@@ -1,0 +1,19 @@
+class Solution:
+    def segregateElements(self, arr):
+        n = len(arr)
+        ne = []
+        p = []
+        for i in range(n):
+            if arr[i] > 0:
+                p.append(arr[i])
+            else:
+                ne.append(arr[i])
+        
+        i = 0
+        for num in p:
+            arr[i] = num
+            i += 1
+        for num in ne:
+            arr[i] = num
+            i += 1
+        # No return needed if in-place change is expected
