@@ -1,0 +1,3 @@
+len(fruits)         # Number of items
+"apple" in fruits   # Check if item exists
+fruits.clear()      # Removes all elements
