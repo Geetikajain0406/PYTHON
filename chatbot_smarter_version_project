@@ -1,0 +1,36 @@
+import datetime
+import random
+
+def chatbot(user_input):
+    user_input=user_input.lower()
+    responses={
+        "hello": ["Hi there!", "Yo! What's up?", "Hey hey hey! 😄"],
+        "hi": ["Hello!", "Hey!", "Namaste! 🙏"],
+        "bye": ["Bye bye! Take care 👋", "Goodbye! See you soon!", "Tata! 😁"],
+        "how are you": ["I'm good! Just binary chilling 😎", "Feeling electric! ⚡", "Doing well, kya haal tumhare?"],
+        "what is your name": ["I'm PyBot Pro, your AI buddy! 🤖", "People call me PyBot!", "Your personal Python partner!"],
+        "thank you": ["Anytime!", "You’re welcome 😇", "No problem at all!"],
+        "who created you": ["A cool coder just like you 😎", "Geetika jain!", "I'm open-source baby!"]
+ 
+    }
+    for keyword in responses:
+        if keyword in user_input:
+            return random.choice(responses[keyword])
+
+    fallback_reply = [
+                "Hmm... that's above my paygrade! ",
+        "I wish I could answer that, but I'm just a humble bot.",
+        "Abey yeh kya pooch liya! ",
+        "Interesting... Let me pretend I understood that ",
+        "Tum bohot intelligent ho, mujhe samajh nahi aaya ",
+    ]
+    return random.choice(fallback_reply)
+    
+print(" Welcome to chatbot! Type 'exit' to leave.")
+while True:
+    user =  input("you:  ")
+    if user.lower() =="exit":
+        print("bot is signing out !!")
+        break
+    reply=chatbot(user)
+    print("bot :",reply)
