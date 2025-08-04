@@ -1,0 +1,29 @@
+# chatbot.py
+
+
+def chatbot(user_input):
+    user_input=user_input.lower()
+    responses={
+        "hello":"hi there chatbot activated",
+        "hi":"hiii thereee!whats up",
+        "bye":"Goodbyee have a nice day",
+        "how are you":"i am great wbu?",
+        "what is your name":"I'm chatbot,your?",
+        "thank you":"your welcomee ,have a nice day",
+    }
+
+    if user_input in responses:
+        return responses[user_input]
+    else:
+        return "sorry, i did not get itt!!"
+    
+
+
+print(" Welcome to chatbot! Type 'exit' to leave.")
+while True:
+    user =  input("you:  ")
+    if user.lower() =="exit":
+        print("bot is signing out !!")
+        break
+    reply=chatbot(user)
+    print("bot :",reply)
