@@ -1,0 +1,10 @@
+import cv2 as cv
+import numpy as np
+img=cv.imread('img.jpg')
+png=cv.imwrite(img,img.png)
+bmp=cv.imwrite(img,img.bmp)
+tiff=cv.imwrite(img,img.tiff)
+img2=np.hstack(img,png,bmp,tiff)
+cv.show(img2)
+cv.waitkeys(0)
+cv.destroyAllWindows()
