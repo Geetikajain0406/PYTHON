@@ -1,0 +1,207 @@
+Perfect 👍
+Let’s start immediately — no wasting time.
+
+🔥 Python Basics – Practice + Dry Run (Exam / Interview Level)
+
+I’ll give you 10 important questions with clear explanation + dry run (your preferred style).
+
+
+---
+
+Q1️⃣ Output Based (Variables)
+
+x = 5
+y = x
+x = 10
+print(y)
+
+✅ Output:
+
+5
+
+🧠 Dry Run:
+
+x = 5
+
+y = x → y = 5
+
+x = 10 (only x changes)
+
+y remains 5
+
+
+
+---
+
+Q2️⃣ Input & Type
+
+a = input()
+b = input()
+print(a + b)
+
+If input:
+
+2
+3
+
+✅ Output:
+
+23
+
+🧠 Reason:
+
+input() → string
+
+"2" + "3" → string concatenation
+
+
+✔️ To fix:
+
+print(int(a) + int(b))
+
+
+---
+
+Q3️⃣ If–Else
+
+x = 7
+if x % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+✅ Output:
+
+Odd
+
+
+---
+
+Q4️⃣ Loop Output
+
+for i in range(1, 6, 2):
+    print(i)
+
+✅ Output:
+
+1
+3
+5
+
+🧠 range(start, stop, step)
+
+
+---
+
+Q5️⃣ While Loop
+
+i = 1
+while i <= 3:
+    print(i)
+    i += 1
+
+✅ Output:
+
+1
+2
+3
+
+
+---
+
+Q6️⃣ List Operations (Very Important)
+
+a = [1, 2, 3]
+a.append(4)
+a.insert(1, 10)
+print(a)
+
+✅ Output:
+
+[1, 10, 2, 3, 4]
+
+
+---
+
+Q7️⃣ List vs Tuple
+
+t = (1, 2, 3)
+t[0] = 10
+
+❌ Error:
+
+TypeError: 'tuple' object does not support item assignment
+
+🧠 Tuple = immutable
+
+
+---
+
+Q8️⃣ Dictionary Access
+
+d = {"a": 1, "b": 2}
+print(d.get("c"))
+
+✅ Output:
+
+None
+
+⚠️ No error, returns None
+
+
+---
+
+Q9️⃣ Function Output
+
+def fun(x):
+    return x * x
+
+print(fun(3))
+
+✅ Output:
+
+9
+
+
+---
+
+Q🔟 List Comprehension
+
+a = [1, 2, 3, 4]
+b = [x for x in a if x % 2 == 0]
+print(b)
+
+✅ Output:
+
+[2, 4]
+
+
+---
+
+🔑 Exam Tip (JIIT / BCA Level)
+
+Most questions come from:
+
+Output prediction
+
+Lists & dictionaries
+
+input() confusion
+
+Loop logic
+
+Mutability (list vs tuple)
+
+
+
+---
+
+👉 What I’ll do NEXT (choose one, or I’ll auto-continue):
+
+1️⃣ More 15 output-based tricky questions
+2️⃣ Python programs (factorial, palindrome, prime, etc.)
+3️⃣ Python viva questions + answers
+4️⃣ Python → DSA transition (arrays, strings logic)
+5️⃣ HackerRank-style practice (step-by-step)
+
+Reply with the number (or say continue) 💪
