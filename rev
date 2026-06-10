@@ -1,0 +1,13 @@
+ Ek baar ke liye soch
+Set = unique customer IDs ki chhalni. Agar ek ID already andar hai, dobara andar nahi jaati. Membership check (kya yeh fraud customer hai?) dict se bhi fast hai kyunki sirf hash compare hota hai, value nahi.
+
+fraud_ids = {1001, 1002, 1003, 1001}  # → {1001, 1002, 1003} auto-dedup!
+new_customers = {2001, 2002, 1002}
+
+# Set Operations — SQL JOIN jaisa!
+both   = fraud_ids & new_customers    # INTERSECTION — {1002}
+either = fraud_ids | new_customers    # UNION — sabhi
+only_fraud = fraud_ids - new_customers  # DIFFERENCE — {1001, 1003}
+exclusive = fraud_ids ^ new_customers   # SYM DIFF — sirf ek mein jo ho
+
+# Membership — O(1)!
