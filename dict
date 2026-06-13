@@ -1,0 +1,23 @@
+ustomer = {
+    'id': 1001, 'name': 'Priya', 'rfm_score': 4.5
+}
+
+# CRUD
+customer['segment'] = 'Premium'         # add/update
+del customer['rfm_score']               # delete
+val = customer.get('missing', 'N/A')    # safe get — KeyError nahi aayega!
+
+# Loop karna
+for key, val in customer.items():       # key-value dono
+    print(f"{key}: {val}")
+keys = list(customer.keys())
+vals = list(customer.values())
+
+# Dict comprehension
+squares = {x: x**2 for x in range(5)}  # {0:0, 1:1, 2:4, 3:9, 4:16}
+
+# Merge dicts (Python 3.9+)
+d1 = {'a': 1}; d2 = {'b': 2}
+merged = d1 | d2                        # {'a':1, 'b':2}
+
+# def
