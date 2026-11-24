@@ -1,0 +1,54 @@
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split,GridSearchCV
+from sklearn.preprocessing import StandardScaler
+from sklearn.pipeline import Pipeline
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import confusion_matrix, classification_report
+
+iris = load_iris()
+
+x=iris.data
+y = iris.target
+
+x_train ,x_test,y_train,y_test = train_test_split(
+    x,y,test_size = 0.30,random_state = 42,stratify = y
+)
+#create pipeline with scaling and knn
+pipeline = Pipeline([
+    ('scaler',StandardScaler()),
+    ('knn',KNeighborsClassifier())
+])
+
+#try diff values from 1 t 15 for k
+
+params = {
+    'knn__n_neighbors' : range(1,16)
+}
+#apply gridsearch with 5 fold cross validation
+
+grid = GridSearchCV(pipeline,params,cv=5)
+
+#train the model
+grid.fit(x_train,y_train)
+
+#print best parameter
+print("best parameter:",grid.best_params_)
+
+#cross validation 
+print("CV accuracy",grid.best_score_)
+
+#predict test data
+y_pred = grid.predict(x_test)
+# Test accuracy
+print("Test Accuracy:", accuracy_score(y_test, y_pred))
+
+# Confusion matrix
+print("Confusion Matrix:")
+print(confusion_matrix(y_test, y_pred))
+
+# Classification report
+print("Classification Report:")
+print(classification_report(
+    y_test, y_pred, target_names=iris.target_names
+))
